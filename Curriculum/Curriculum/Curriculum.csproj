@@ -1,0 +1,217 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{1ECEF7D5-05B3-4846-952D-9855F356D886}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Curriculum</RootNamespace>
+    <AssemblyName>Curriculum</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Calculator.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Calculator.Designer.cs">
+      <DependentUpon>Calculator.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CV_Evangelista.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CV_Evangelista.Designer.cs">
+      <DependentUpon>CV_Evangelista.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CV.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CV.Designer.cs">
+      <DependentUpon>CV.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CV_Generatedform_Evangelista.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CV_Generatedform_Evangelista.Designer.cs">
+      <DependentUpon>CV_Generatedform_Evangelista.cs</DependentUpon>
+    </Compile>
+    <Compile Include="galdianofillupform.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="galdianofillupform.Designer.cs">
+      <DependentUpon>galdianofillupform.cs</DependentUpon>
+    </Compile>
+    <Compile Include="galdianogeneratedform.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="galdianogeneratedform.Designer.cs">
+      <DependentUpon>galdianogeneratedform.cs</DependentUpon>
+    </Compile>
+    <Compile Include="henifillupform.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="henifillupform.Designer.cs">
+      <DependentUpon>henifillupform.cs</DependentUpon>
+    </Compile>
+    <Compile Include="henigeneratedform.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="henigeneratedform.Designer.cs">
+      <DependentUpon>henigeneratedform.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LamsenForm1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LamsenForm1.Designer.cs">
+      <DependentUpon>LamsenForm1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LamsenForm2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LamsenForm2.Designer.cs">
+      <DependentUpon>LamsenForm2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Login.Designer.cs">
+      <DependentUpon>Login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Calculator.resx">
+      <DependentUpon>Calculator.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CV_Evangelista.resx">
+      <DependentUpon>CV_Evangelista.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CV.resx">
+      <DependentUpon>CV.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CV_Generatedform_Evangelista.resx">
+      <DependentUpon>CV_Generatedform_Evangelista.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="galdianofillupform.resx">
+      <DependentUpon>galdianofillupform.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="galdianogeneratedform.resx">
+      <DependentUpon>galdianogeneratedform.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="henifillupform.resx">
+      <DependentUpon>henifillupform.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="henigeneratedform.resx">
+      <DependentUpon>henigeneratedform.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LamsenForm1.resx">
+      <DependentUpon>LamsenForm1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LamsenForm2.resx">
+      <DependentUpon>LamsenForm2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Login.resx">
+      <DependentUpon>Login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\circle.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\letter.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\circle1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\location.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\check.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\me.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\people.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\circle %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\collaboration.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\jerald.jpg" />
+    <None Include="Resources\calculator.jpg" />
+    <Content Include="Resources\call.png" />
+    <None Include="Resources\val.jpg" />
+    <None Include="Resources\call1.png" />
+    <Content Include="Resources\email.png" />
+    <Content Include="Resources\email1.png" />
+    <None Include="Resources\gene.jpg" />
+    <Content Include="Resources\icons8-%40-15.png" />
+    <None Include="Resources\icons8-%40-152.png" />
+    <None Include="Resources\icons8-%40-151.png" />
+    <Content Include="Resources\icons8-%40-24.png" />
+    <Content Include="Resources\icons8-%40-241.png" />
+    <Content Include="Resources\icons8-back-button-20.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
